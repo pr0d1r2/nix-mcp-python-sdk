@@ -1,0 +1,12 @@
+---
+name: CI
+
+"on":
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  guardrails:
+    uses: pr0d1r2/set-and-setting/.github/workflows/guardrails.yml@main
